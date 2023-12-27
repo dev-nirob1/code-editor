@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor Pro Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7e464cca7d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <main class="container mx-auto">
+        <section class="py-5 bg-emerald-400 mt-4 rounded-lg">
+            <h2 class="text-center text-5xl pb-3 font-semibold text-gray-800">Code Editor Pro</h2>
+            <hr>
+            <div class="flex flex-wrap gap-3 justify-around my-5 bg-emerland-300">
+                <div class="space-x-5">
+                    <button id="bold"><i class="fa-solid fa-bold"></i></button>
+                    <button id="italic"> <i class="fa-solid fa-italic"></i></button>
+                    <button id="underline"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div class="space-x-5">
+                    <button id="align-left"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="align-center"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="align-right"> <i class="fa-solid fa-align-right"></i></button>
+                    <button id="align-justify"><i class="fa-solid fa-align-justify"></i></button>
+
+                </div>
+                <div class="space-x-5 text-xl font-medium">
+                    <input id="font-size" type="number" min="0" max="100" value="16">
+                    <button id="upper-lower">aA</button>
+                    <input type="color" id="color-picker">
+                </div>
+              
+            </div>
+            <div class="pb-5 w-11/12 mx-auto">
+                <textarea id="text-area"  class="w-full h-96 p-2 resize-none"  name="" rows="15" placeholder="Write your text here..."></textarea>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
